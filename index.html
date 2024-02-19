@@ -14,7 +14,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
-     <style>
+    <style>
         .raleway{
             font-family: "Raleway", sans-serif;
         }
@@ -23,13 +23,38 @@
         }
     </style>
 </head>
-<body>
+<body class="roboto" >
     <!-- header section start  -->
-    <header>
+    <header class="container mx-auto max-w-[80%] my-8" >
         <!-- navigation section  -->
-        <nav></nav>
+        <nav class="  bg-base-100 flex justify-between items-center " >
+            <div class="flex space-x-60" >
+                <div>
+                    <h3 class="text-3xl font-extrabold max-w[160px]" >P-Ticket</h3>
+                </div>
+                <div class="hidden lg:flex space-x-12" >
+                    <a class="text-base text-[#424247]"  href="#">Home</a>
+                    <a class="text-base text-[#424247]" href="#">About</a>
+                    <a class="text-base text-[#424247]" href="#">Destination</a>
+                    <a class="text-base text-[#424247]" href="#">Search</a>
+                </div>
+            </div>
+            <div class="flex items-baseline">
+                <button class="btn w-[150px] text-xl font-bold max-w-[130px] min-h-[56] border-[#00FF00] text-[#00FF00] bg-[#e6f5ed]"> Bus <img src="images/bus-icon.png" alt=""></button>
+                
+            </div>
+        </nav>
         <!-- banner section  -->
-        <section></section>
+        <section class="container mx-auto min-h-screen bg-[url(images/banner.png)] bg-no-repeat " >
+            <div class="flex flex-col justify-center items-center p-12 my-8" >
+                <h1 class="text-white text-center text-7xl font-bold raleway my-6" >End-to-End Travel with <br><span class="text-[#00FF00] mt-12." >P Paribahan</span></h1>
+                <p class="text-center text-lg my-6 max-w-[502px] text-white" >Yes, you can run unit tests and view the results directly within the app. The 
+                integrated testing features allow for a streamlined </p>
+                <button class="btn max-w-[150px] bg-[#00FF00] text-xl font-bold border-none">Buy Tickets</button>
+            </div>
+
+
+        </section>
 
     </header>
     <!-- header section end  -->
